@@ -33,7 +33,23 @@ document.addEventListener('click', (e) =>{
       });
     } else if (e.target.classList.contains('saturation-remove')) {
       Caman('#canvas', img, function(){
-        this.vibrance(-5).render();
+        this.saturation(-5).render();
+      });
+    } else if (e.target.classList.contains('hue-add')) {
+      Caman('#canvas', img, function(){
+        this.hue(5).render();
+      });
+    } else if (e.target.classList.contains('hue-remove')) {
+      Caman('#canvas', img, function(){
+        this.hue(-5).render();
+      });
+    } else if (e.target.classList.contains('noise-add')) {
+      Caman('#canvas', img, function(){
+        this.noise(10).render();
+      });
+    } else if (e.target.classList.contains('noise-remove')) {
+      Caman('#canvas', img, function(){
+        this.noise(-10).render();
       });
     } else if (e.target.classList.contains('vibrance-add')) {
       Caman('#canvas', img, function(){
