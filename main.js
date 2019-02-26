@@ -37,11 +37,11 @@ document.addEventListener('click', (e) =>{
       });
     } else if (e.target.classList.contains('hue-add')) {
       Caman('#canvas', img, function(){
-        this.hue(5).render();
+        this.hue(2).render();
       });
     } else if (e.target.classList.contains('hue-remove')) {
       Caman('#canvas', img, function(){
-        this.hue(-5).render();
+        this.hue(-2).render();
       });
     } else if (e.target.classList.contains('noise-add')) {
       Caman('#canvas', img, function(){
@@ -54,6 +54,10 @@ document.addEventListener('click', (e) =>{
     } else if (e.target.classList.contains('vibrance-add')) {
       Caman('#canvas', img, function(){
         this.vibrance(5).render();
+      });
+    } else if (e.target.classList.contains('vibrance-remove')) {
+      Caman('#canvas', img, function(){
+        this.vibrance(-5).render();
       });
     } else if (e.target.classList.contains('vintage-add')) {
       Caman('#canvas', img, function(){
